@@ -193,18 +193,32 @@ a { text-decoration: none; color: inherit; }
 
 /* Botón volver */
 .back-btn {
-  display:inline-block;
-  margin-top: 2rem;
-  padding: 8px 16px;
-  background-color: var(--green-500);
-  color: var(--white);
-  border-radius: 8px;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #0f9a6b, #14b78f);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
   text-decoration: none;
-  transition: background 0.2s ease;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+   margin-top: 20px;
+    margin-bottom: 25px;
 }
-.back-btn:hover { background-color: #0f9a6b; }
 
+.back-btn:hover {
+  background: linear-gradient(135deg, #14b78f, #0f9a6b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn::before {
+  content: "←";
+  font-size: 18px;
+}
 /* ==========================
    Footer y WhatsApp
 ========================== */
