@@ -14,14 +14,28 @@
 
   <!-- Estilos propios -->
   <link rel="stylesheet" href="style.css" />
+
+  <meta name="description" content="Óptica Visión Clara - Tu mejor opción en gafas, lentes y cuidado visual.">
+  <meta name="keywords" content="óptica, gafas, lentes, visión, Guatemala">
+  <meta name="author" content="Óptica Visión Clara">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-621HJ183BL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-621HJ183BL');
+  </script>
+
 </head>
 
 <body>
-<div class="loader">
-        <div class="spinner"></div>
-    </div>
+  <div class="loader">
+    <div class="spinner"></div>
+  </div>
 
-  <header class="site-header" >
+  <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <img alt="Logo de Óptica Visión Clara, un icono de gafas modernas en azul y blanco" class="logo"
@@ -56,15 +70,15 @@
 
   <main class="main-content container" id="inicio">
     <!-- Inicio -->
- <section class="section text-center" >
-  <h2 class="hero-title"><span class="v2">ÓPTICA</span> VISIÓN CLARA</h2>
-  <p class="hero-sub">Tu mejor opción para cuidar y mejorar tu visión con estilo y calidad.</p>
+    <section class="section text-center">
+      <h2 class="hero-title"><span class="v2">ÓPTICA</span> VISIÓN CLARA</h2>
+      <p class="hero-sub">Tu mejor opción para cuidar y mejorar tu visión con estilo y calidad.</p>
 
-  <video class="hero-video" autoplay muted loop playsinline>
-    <source src="imagen/video.mp4" type="video/mp4" />
-    Tu navegador no soporta la etiqueta de video.
-  </video>
-</section>
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="imagen/video.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+    </section>
 
 
 
@@ -98,10 +112,9 @@
       <h2 class="section-title">Sobre Nosotros</h2>
       <div class="about-inner">
         <img alt="Equipo de ópticos profesionales sonrientes en óptica moderna con gafas y uniformes azules"
-          class="about-img"
-          src="imagen/ABOUT1.jpg" />
+          class="about-img" src="imagen/ABOUT1.jpg" />
         <div class="about-text">
-          <p >En Óptica Visión Clara contamos con más de 15 años de experiencia brindando atención personalizada y
+          <p>En Óptica Visión Clara contamos con más de 15 años de experiencia brindando atención personalizada y
             productos de alta calidad para cuidar la salud visual de toda la familia. Nuestro equipo de profesionales
             está comprometido con tu bienestar y estilo.</p>
           <p class="mt">Visítanos y descubre la diferencia de un servicio cercano, confiable y con las últimas
@@ -111,63 +124,64 @@
     </section>
 
     <!-- Contacto -->
-<section class="section contact-section" id="contacto">
-  <h2 class="section-title">Contáctanos</h2>
+    <section class="section contact-section" id="contacto">
+      <h2 class="section-title">Contáctanos</h2>
 
-  <div class="contact-inner">
-    <!-- FORM -->
-    <form class="contact-form" onsubmit="return false;">
-      <div class="form-group">
-        <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
-        <input id="nombre" name="nombre" placeholder="Tu nombre completo" required type="text" />
+      <div class="contact-inner">
+        <!-- FORM -->
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
+            <input id="nombre" name="nombre" placeholder="Tu nombre completo" required type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico</label>
+            <input id="email" name="email" placeholder="tuemail@ejemplo.com" required type="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje"><i class="fas fa-comment-dots"></i> Mensaje</label>
+            <textarea id="mensaje" class="textletter" name="mensaje" placeholder="Escribe tu mensaje aquí" required
+              rows="4"></textarea>
+          </div>
+
+          <button class="btn-submit" type="submit">
+            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+          </button>
+        </form>
+
+        <!-- INFO -->
+        <div class="contact-info">
+          <h3>Información de contacto</h3>
+          <p><i class="fas fa-map-marker-alt mr"></i> Calle Principal, Ciudad de Guatemala</p>
+          <p><i class="fas fa-phone mr"></i> +502 3455-5139</p>
+          <p><i class="fas fa-envelope mr"></i> contacto@opticavisionclara.com</p>
+        </div>
       </div>
-
-      <div class="form-group">
-        <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico</label>
-        <input id="email" name="email" placeholder="tuemail@ejemplo.com" required type="email" />
-      </div>
-
-      <div class="form-group">
-        <label for="mensaje"><i class="fas fa-comment-dots"></i> Mensaje</label>
-        <textarea id="mensaje" class="textletter" name="mensaje" placeholder="Escribe tu mensaje aquí" required rows="4"></textarea>
-      </div>
-
-      <button class="btn-submit" type="submit">
-        <i class="fas fa-paper-plane"></i> Enviar Mensaje
-      </button>
-    </form>
-
-    <!-- INFO -->
-    <div class="contact-info">
-      <h3>Información de contacto</h3>
-      <p><i class="fas fa-map-marker-alt mr"></i> Calle Principal, Ciudad de Guatemala</p>
-      <p><i class="fas fa-phone mr"></i> +502 3455-5139</p>
-      <p><i class="fas fa-envelope mr"></i> contacto@opticavisionclara.com</p>
-    </div>
-  </div>
-</section>
+    </section>
 
   </main>
 
   <footer class="site-footer">
-  <div class="footer-content">
-    
-    <div class="social-links">
-      <a href="https://www.facebook.com" target="_blank">
-        <img class="icon" src="paginas/imagenes_promociones/facebook.png" alt="Facebook">
-      </a>
-      <a href="https://www.youtube.com" target="_blank">
-        <img src="paginas/imagenes_promociones/youtube.png" alt="YouTube">
-      </a>
-      <a href="https://www.tiktok.com" target="_blank">
-        <img src="paginas/imagenes_promociones/gorjeo (1).png" alt="TikTok">
-      </a>
+    <div class="footer-content">
+
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">
+          <img class="icon" src="paginas/imagenes_promociones/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+          <img src="paginas/imagenes_promociones/youtube.png" alt="YouTube">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+          <img src="paginas/imagenes_promociones/gorjeo (1).png" alt="TikTok">
+        </a>
+      </div>
+
+      <p>© 2025 Óptica Visión Clara. Todos los derechos reservados.</p>
+
     </div>
-    
-<p>© 2025 Óptica Visión Clara. Todos los derechos reservados.</p>
-    
-  </div>
-</footer>
+  </footer>
 
 
   <!-- Botón flotante de WhatsApp -->
@@ -178,7 +192,6 @@
 
   <!-- Script -->
   <script src="script.js" defer></script>
-  <script src="paginas/preoloader.js" defer></script>
 </body>
 
 

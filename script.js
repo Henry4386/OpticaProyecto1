@@ -9,3 +9,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Evento personalizado: clic en el botón de WhatsApp
+  const whatsappBtn = document.querySelector(".whatsapp-btn");
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener("click", () => {
+      gtag('event', 'click_whatsapp', {
+        'event_category': 'engagement',
+        'event_label': 'Botón WhatsApp'
+      });
+    });
+  }
+});
+
+// Evento: medir cuánto tiempo estuvo el usuario en la página (30s)
+setTimeout(() => {
+  gtag('event', '30_seconds', {
+    'event_category': 'engagement',
+    'event_label': 'Usuario estuvo 30s en la página'
+  });
+}, 30000); // 30 segundos
+
+
+
