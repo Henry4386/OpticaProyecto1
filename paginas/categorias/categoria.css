@@ -2,8 +2,9 @@
    Variables y Reset
 ========================== */
 :root {
-  --blue-700: #1d4ed8;
-  --blue-600: #2563eb;
+
+  --blue-700: #110b26;
+  --blue-600: #9bc3f9;
   --gray-50: #f9fafb;
   --gray-600: #4b5563;
   --white: #ffffff;
@@ -126,6 +127,34 @@ a { text-decoration: none; color: inherit; }
   padding: 2rem 0;
 }
 
+.hero-title{
+  color: var(--blue-700);
+}
+
+
+/* Animación: aparece desde la izquierda */
+@keyframes slideIn {
+  from {
+    transform: translateX(-70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Aplicamos a los elementos */
+.logo,
+.site-title {
+  animation: slideIn 1s ease-out forwards;
+}
+
+/* Para que el texto aparezca después del logo */
+.site-title {
+  animation-delay: 0.1s;
+}
+
 .category-products .section-title {
   text-align: center;
   color: var(--blue-700);
@@ -195,7 +224,7 @@ a { text-decoration: none; color: inherit; }
 .back-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 90px;
   background: linear-gradient(135deg, #0f9a6b, #14b78f);
   color: white;
   font-weight: bold;
@@ -207,6 +236,7 @@ a { text-decoration: none; color: inherit; }
   transition: all 0.3s ease;
    margin-top: 20px;
     margin-bottom: 25px;
+    
 }
 
 .back-btn:hover {
@@ -216,19 +246,46 @@ a { text-decoration: none; color: inherit; }
 }
 
 .back-btn::before {
-  content: "←";
   font-size: 18px;
 }
 /* ==========================
    Footer y WhatsApp
 ========================== */
-.site-footer {
+
+/* Footer */
+.site-footer{
   background: var(--blue-700);
-  color: var(--white);
+  color: #fff;
   text-align: center;
-  padding: 18px 8px;
+  padding: 24px 12px;
   margin-top: 28px;
 }
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-links{
+  display: flex;
+  gap: 50px;
+  margin-top: 8px;
+}
+
+.social-links a img{
+  
+  width: 42px;      /* tamaño de ícono */
+  height: 42px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.social-links a:hover img{
+  transform: scale(1.02);    /* efecto zoom al pasar el mouse */
+  filter: brightness(1.02);  /* se ve más brillante */
+}
+
 
 .whatsapp-btn {
   position: fixed;
@@ -258,7 +315,7 @@ a { text-decoration: none; color: inherit; }
 
 h2 {
   text-align: center;        /* Centra el texto horizontalmente */
-  color: #1d4ed8;            /* Azul similar a tu tema */
+              /* Azul similar a tu tema */
   font-size: 2rem;           /* Tamaño grande para título de sección */
   font-weight: 700;          /* Negrita */
   margin: 1.5rem 0;          /* Espaciado arriba y abajo */
